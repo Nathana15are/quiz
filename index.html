@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Quiz d'amitié</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Crée ton quiz d'amitié 🥳</h1>
+    <p>Entrez votre prénom et celui de votre ami(e) :</p>
+    <input type="text" id="yourName" placeholder="Ton prénom">
+    <input type="text" id="friendName" placeholder="Prénom de ton ami(e)">
+    <button id="generateLinkBtn">Générer le lien</button>
+
+    <div id="linkContainer" class="hidden">
+        <p>Partage ce lien avec ton ami(e) :</p>
+        <input type="text" id="quizLink" readonly>
+        <button id="copyLinkBtn">Copier le lien</button>
+    </div>
+
+    <p>Ou consultez les résultats : <a href="admin.html">Page Admin</a></p>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
