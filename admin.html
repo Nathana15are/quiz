@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Admin</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin - Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#1E90FF" />
 </head>
 <body>
-  <h1>Tableau des résultats</h1>
-  <div id="adminResults"></div>
+  <header>
+    <h1>Administration du Quiz</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>Gestion des questions</h2>
+      <form id="questionForm">
+        <input type="text" id="newQuestion" placeholder="Nouvelle question" required />
+        <input type="text" id="newOption1" placeholder="Option 1" required />
+        <input type="text" id="newOption2" placeholder="Option 2" required />
+        <input type="text" id="newOption3" placeholder="Option 3" required />
+        <input type="text" id="newOption4" placeholder="Option 4" required />
+        <input type="number" id="correctAnswer" placeholder="Numéro bonne réponse (1-4)" min="1" max="4" required />
+        <button type="submit">Ajouter Question</button>
+      </form>
+      <div id="adminOutput"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Quiz App</p>
+  </footer>
+
   <script src="admin.js"></script>
 </body>
 </html>
