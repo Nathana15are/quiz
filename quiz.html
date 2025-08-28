@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quiz</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#1E90FF" />
 </head>
 <body>
-  <h1>Réponds aux questions</h1>
-  <form id="quizForm">
-    <label>Ton animal préféré ?</label>
-    <input type="text" name="q1" required><br><br>
+  <header>
+    <h1>Quiz</h1>
+  </header>
 
-    <label>Ton plat préféré ?</label>
-    <input type="text" name="q2" required><br><br>
+  <main>
+    <div class="container">
+      <div class="question" id="question">Question ici</div>
+      <div class="options" id="options"></div>
+      <button id="nextBtn">Suivant</button>
+    </div>
+  </main>
 
-    <button type="submit">Envoyer</button>
-  </form>
+  <footer>
+    <p>&copy; 2025 Quiz App</p>
+  </footer>
+
   <script src="quiz.js"></script>
 </body>
 </html>
