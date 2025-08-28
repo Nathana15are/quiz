@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Résultats</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#1E90FF" />
 </head>
 <body>
-  <h1>Résultats du Quiz</h1>
-  <div id="results"></div>
+  <header>
+    <h1>Résultat du Quiz</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="result" id="result">Votre score s'affichera ici</div>
+      <button onclick="window.location.href='index.html'">Retour à l'accueil</button>
+      <button onclick="window.location.href='quiz.html'">Rejouer</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Quiz App</p>
+  </footer>
+
   <script src="result.js"></script>
 </body>
 </html>
