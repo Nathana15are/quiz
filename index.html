@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Création Quiz</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accueil - Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#1E90FF" />
 </head>
 <body>
-  <h1>Bienvenue sur le Quiz</h1>
-  <input id="username" type="text" placeholder="Entre ton prénom">
-  <button id="generateLinkBtn">Générer mon lien</button>
-  <script src="index.js"></script>
+  <header>
+    <h1>Bienvenue sur le Quiz</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>Testez vos connaissances !</h2>
+      <button onclick="window.location.href='quiz.html'">Commencer le Quiz</button>
+      <button onclick="window.location.href='admin.html'">Admin</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Quiz App</p>
+  </footer>
 </body>
 </html>
